@@ -1,0 +1,13 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>{{ title }}</title>
+<link rel='stylesheet' href='{% static "css/login.css" %}' />
+</head>
+<body oncontextmenu="return false">
+		{% block login %}
+		{% endblock %}
+</body>
+</html>
