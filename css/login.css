@@ -1,5 +1,5 @@
 body{	
-		background-image: url("https://images.bewakoof.com/utter/food-photography-made-easy-with-just-7-points.jpg");
+		background-image: url(https://images.bewakoof.com/utter/food-photography-made-easy-with-just-7-points.jpg);
 		background-size: cover;
 		font-family: sans-serif;	
 	}
@@ -180,16 +180,17 @@ width: 55%;
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
+
 .accountMaken{ 
- width: 120px;
- height: 10px;
- background: transparent;
- border-bottom: 1px solid white;
- cursor: pointer;
- color: white;
- font-family: 'Exo', sans-serif;
- font-size: 13px;
- font-weight: 400;
- padding: 6px;
- margin-top: 5px;
+	width: 100%;
+	height: 10px;
+	background: transparent;
+	border: transparent;
+	cursor: pointer;
+	color: black;
+	font-family: 'Exo', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
 }
