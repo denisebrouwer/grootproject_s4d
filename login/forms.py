@@ -17,8 +17,10 @@ class UserLoginForm(forms.Form):
 		password = self.cleaned_data.get("password")
 		user = authenticate(username=username, password=password)
 		if username and password:
-			user = authenticate(username=username, password=password)
-			if not user:
+			user_qs = User.objects.filter(username=username)
+			if user_qs.count()==1:
+				user = user_qs.first()
+			else:
 				raise forms.ValidationError("This user does not exist")
 
 			if not user.check_password(password):
@@ -46,13 +48,16 @@ class UserRegisterForm(forms.ModelForm):
 			
 		]
 
-	def clean_email2(self):
-		email = self.cleaned_data.get("email")
-		email2 = self.cleaned_data.get("email2")
+	def clean_password2(self):
 		password = self.cleaned_data.get("password")
 		password2 = self.cleaned_data.get("password2")
 		if password != password2:
 			raise forms.ValidationError("Passwords must match")
+		return password
+
+	def clean_email2(self):
+		email = self.cleaned_data.get("email")
+		email2 = self.cleaned_data.get("email2")
 
 		if email != email2:
 			raise forms.ValidationError("Emails must match")
