@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+.jumbotron {
+	text-align: center;
+}
+</style>
+{% endblock %}
+{% block jumbotron %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1></h1>
+      </div>
+{% endblock %}
+
+{% block content %}
+
+<div class="page-centered">
+
+<div class="header">
+			<div>Contact</div>
+		</div>
+
+<div class="infoBlok">
+
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='submit form' class ='btn btn-default' />
+</form>
+
+</div>
+
+
+</div>
+{% endblock %}
