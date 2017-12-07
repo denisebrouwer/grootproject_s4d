@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<style>
+.jumbotron {
+	text-align: center;
+}
+</style>
+{% endblock %}
+{% block jumbotron %}
+<!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1></h1>
+      </div>
+{% endblock %}
+
+{% block content %}
+<div class="page-centered">
+<div class="header">
+			<div>MealPlanner</div>
+		</div>
+<div class="infoBlok">
+		MealPlanner is uw persoonlijke assistent op het gebied van dineren. 
+		MealPlanner helpt u met het uitkiezen van maaltijden. Houd bij wat u de hele week gaat eten en maakt 1 boodschappen lijst aan.
+		Zo hoeft u maar 1 keer per week over het avond eten na te denken. Lekker op zondag avond de MealPlanner invullen.
+		Zo houd u tijd over voor andere belangrijke dingen in het leven.
+</div>
+
+<form method='POST' action=''> {% csrf_token %}
+{{ form.as_p }}
+<input type='submit' value='naar MealPlanner' class ='btn btn-default' />
+</form>
+
+
+		
+
+</div>
+{% endblock %}
+
+
