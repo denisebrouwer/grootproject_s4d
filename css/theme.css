@@ -1,6 +1,24 @@
 body {
   padding-top: 70px;
   padding-bottom: 30px;
+  background-color: white;
+  color:black;
+  font-family: sans-serif;
+}
+
+.header{	
+	width: 500px;
+	margin-top:5%;
+	margin-left: auto;
+	margin-right: auto;
+	color: orange;
+	font-family: 'Exo', sans-serif;
+	font-size: 80px;
+	font-weight: 200;
+}
+
+.header span{
+	color: white !important;
 }
 
 .theme-dropdown .dropdown-menu {
@@ -15,4 +33,143 @@ body {
 
 .theme-showcase .navbar .container {
   width: auto;
+  background-color:#FFBF00;
 }
+
+.container .jumbotron, .container-fluid .jumbotron {
+    background-image: url(http://www.geofftelfordfoodphotography.co.uk/wp-content/uploads/2013/10/ilpirata_sept2016_56.jpg);
+    color:transparent;
+    border-radius: 0px;
+    height:275px;
+}
+
+.container.theme-showcase {
+    width: 100%;
+    padding:0px
+}
+
+.page-centered{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-default .navbar-brand {
+	color:orange ;
+}
+
+.infoBlok {
+ 	width:800px;
+ 	height:auto;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	padding:50px;
+  	border-radius: 15px;
+ 	background-color:orange;
+ }
+
+.btn.btn-default {
+	background-color:orange;
+}
+
+
+
+/*De classes voor de over ons pagina:*/
+
+.crewVisie {
+	float:left;
+    text-align:center;
+    color:white; 
+    width: 100%;
+    height:600px;
+    background-image:url(https://www.kai-stiepel.com/wp-content/uploads/2016/11/mediterrane_kueche.jpg);
+ }
+
+ .visieBlok {
+ 	width:800px;
+ 	height:200px;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	padding:75px;
+  	border-radius: 15px;
+ 	background-color:orange;
+ }
+
+
+
+.voorstellen {
+	background-color:white;
+	width:1000px;
+	height:230px;
+	padding:10px;
+}
+
+
+.naamKaartje {
+  float:left;
+  width: 30%;
+ position: relative;
+}
+
+.voorstelTekst {
+	margin-left:200px;
+	width:70%;
+	height:200px;
+    padding:50px;
+    color:black;
+    background-color:orange;
+}
+
+.naamKaartje {
+  float:left;
+  width: 30%;
+ position: relative;
+}
+
+.voorstelTekst {
+	margin-left:200px;
+	width:70%;
+	height:200px;
+	background-color:#F2F2F2;
+    padding:50px;
+}
+
+
+.image {
+  display:block;
+  width: 200px;
+  height: 200px;
+  padding:10px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  width: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: orange;
+}
+
+.naamKaartje:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*einde classes voor de over ons pagina:*/
+
+
