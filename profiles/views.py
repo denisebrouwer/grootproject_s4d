@@ -10,3 +10,18 @@ def about (request):
 	context = locals()
 	template = 'about.html'
 	return render(request,template,context)
+
+def instellingen (request):
+	context = locals()
+	template = 'instellingen.html'
+	return render(request,template,context)
+
+def voorkeurlijst (request):
+	context = locals()
+	template = 'voorkeurlijst.html'
+	return render(request,template,context)
+
+def infolijst (request):
+	context = locals()
+	template = 'infolijst.html'
+	return render(request,template,context)
