@@ -5,7 +5,7 @@ from django.contrib.auth import(
     login,
     logout,
     )
-
+from .models import Profile
 User = get_user_model()
 
 class UserLoginForm(forms.Form):
@@ -66,3 +66,15 @@ class UserRegisterForm(forms.ModelForm):
 		if email_qs.exists():
 			raise forms.ValidationError("This email has already been registered")
 		return email
+
+class UserProfileForm(forms.ModelForm):
+	favfood = forms.CharField(label="Favoriete ingrediënt")
+	hatefood = forms.CharField(label="Minst lekkere ingrediënt")
+
+	class Meta:
+ 		model = Profile
+ 		fields = [
+ 			"favfood",
+ 			"hatefood",
+ 			"woonplaats",
+ 		]
