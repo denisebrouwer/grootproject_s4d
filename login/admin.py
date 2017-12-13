@@ -1,10 +1,9 @@
+from __future__ import unicode_literals
 from django.contrib import admin
+from .models import Profile
 
-# Register your models here.
-# from .models import user
 
-# class userAdmin(admin.ModelAdmin):
-# 	class Meta:
-# 		model = user
+class ProfileAdmin(admin.ModelAdmin):
+	list_display = ['user', 'favfood', 'hatefood', 'woonplaats']
 
-# admin.site.register(user, userAdmin)
+admin.site.register(Profile, ProfileAdmin)
