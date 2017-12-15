@@ -25,3 +25,8 @@ def infolijst (request):
 	context = locals()
 	template = 'infolijst.html'
 	return render(request,template,context)
+
+def WeekPlanner (request):
+	context = locals()
+	template = 'WeekPlanner.html'
+	return render(request,template,context)
