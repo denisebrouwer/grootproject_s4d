@@ -17,6 +17,7 @@
           {% url 'contact' as contact %}
           {% url 'profiel' as profiel %}
             <li {% if request.path == home %} class="active" {% endif %}><a href="{% url 'home' %}">Home</a></li>
+            <li {% if request.path == WeekPlanner %} class="active" {% endif %}><a href="{% url 'WeekPlanner' %}">WeekPlanner</a></li>
             <li {% if request.path == about %} class="active" {% endif %}><a href="{% url 'about' %}">Over Ons</a></li>
             <li {% if request.path == contact %} class="active" {% endif %}><a href="{% url 'contact' %}">Contact</a></li>
             
